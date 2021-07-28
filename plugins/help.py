@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = C.UPDATES_CHANNEL
 logging.basicConfig(level=logging.INFO)
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@ForceSubscriber_UBot']))
+@Client.on_message(filters.incoming & filters.command(['play', 'play@ForceSubscriber_UBot']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
